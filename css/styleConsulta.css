@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Sigmar&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Definir o fundo da página como branco */
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o header */
+    .header {
+        background-color: #111; 
+        color: #fff; 
+        padding: 10px 0; 
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand-logo {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+    }
+
+    .brand-logo:hover {
+        color: #007bff; 
+    }
+
+    #nav-mobile {
+        list-style-type: none;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    #nav-mobile li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #nav-mobile li a {
+        text-decoration: none;
+        color: #fff; 
+    }
+
+    #nav-mobile li a:hover {
+        color: #007bff; 
+    }
+
+.icone_editar, .icone_status{
+    width: 40px;
+}
+
+/* Estilos para o input com a classe "caixa_pesquisa" */
+.caixa_pesquisa {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.caixa_pesquisa:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px #007bff; 
+}
+
+.div_pesquisa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.caixa_pesquisa{
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+tr{
+    font-size: 20px;
+    text-align: center;
+}
+
+.responsive_table {
+    overflow-x: auto;
+    margin: 30px;
+}
+
+.tabela_dados {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.tabela_dados th, .tabela_dados td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela_dados th {
+    background-color: #393939;
+    color: white;
+}
+
+.tabela_dados tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela_dados tr:hover {
+    background-color: #ddd;
+}
+
+/*FOOTER */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #111; /* Cor de fundo do footer */
+        color: #fff; /* Cor do texto no footer */
+        text-align: center; /* Alinhar o texto ao centro */
+        padding: 10px; /* Espaçamento interno */
+    }
+
+@media screen and (max-width:1360px)
+{
+    tr{
+        font-size: 20px;
+    }
+ }
+
+
+@media screen and (max-width:540px)
+{
+    #nav-mobile{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .caixa_pesquisa{
+        width: 80%;
+        height: 40px;
+    }
+
+    .responsive_table{
+        margin: 0;
+    }
+}
