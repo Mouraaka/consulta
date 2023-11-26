@@ -1,7 +1,7 @@
 # consulta
  Sistema de conulta de usuários
 
- Aqui um exemplo de como criar a tabelo no MYSQL
+ Aqui um exemplo de como criar a tabela no MYSQL
 
     create table USUARIO
     (
